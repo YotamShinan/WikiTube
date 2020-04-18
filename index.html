@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiTube</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="onInit()" class="flex justify-center">
+    <div class="wikitube flex column">
+
+        <header class="main-header flex space-between align-center">
+            <div class="logo">WikiTube</div>
+            <div class="nav-bar flex align-center">
+                <input type="text" class="search-input" oninput="onTypeSerachInput(this.value)" value="" placeholder="Search something..">
+                <button class="search-btn" onclick="onHitSerach()">Search</button>
+            </div>
+        </header>
+        <main class="main-container flex space-between">
+            <ul class="videos-list li-style-none flex column space-between">
+
+            </ul>
+            <section class="content-container flex column align-start">
+                <div class="youtube-spot">
+
+                </div>
+                <section class="wiki ">
+                    <h2 class="wiki-title"> The Beatles </h2>
+                    <p class="wiki-content">
+                        The Beatles were an English rock band formed in Liverpool in 1960. With a line-up comprising John Lennon, Paul McCartney, George Harrison and Ringo Starr, they are regarded as the most influential band of all time.[1] The group were integral to the development
+                        of 1960s counterculture and popular music's recognition as an art form.[2] Rooted in skiffle, beat and 1950s rock and roll, their sound incorporated elements of classical music and traditional pop in innovative ways; the band later
+                        explored music styles ranging from ballads and Indian music to psychedelia and hard rock. As pioneers in recording, songwriting and artistic presentation, the group revolutionised many aspects of the music industry and were often
+                        publicised as leaders of the era's youth and sociocultural movements
+                    </p>
+                </section>
+            </section>
+        </main>
+
+    </div>
+
+
+    <script src="lib/axios.js "></script>
+    <script src="js/wiki-service.js "></script>
+    <script src="js/tube-service.js "></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>
